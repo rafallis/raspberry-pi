@@ -63,7 +63,7 @@ http://ip.do.rasp.berry/owncloud/
 #create admin acc
 
 #configuring external hard drive
-sudo apt-get isntall ntfs-3g
+sudo apt-get install ntfs-3g
 sudo mkdir /media/ownclouddrive
 
 #get gid and uid from server
