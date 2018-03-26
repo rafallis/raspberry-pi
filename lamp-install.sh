@@ -31,8 +31,8 @@ apt-get install -f
 echo "#------------------------------------------------------------#"
 echo "Configuring mysql server to use MYSQLPASS123 as root password"
 echo "#------------------------------------------------------------#"
-echo "mysql-server mysql-server/root_password password MYSQLPASS123" | sudo debconf-set-selections
-echo "mysql-server mysql-server/root_password_again password MYSQLPASS123" | sudo debconf-set-selections
+debconf-set-selections <<< 'mysql-server mysql-server/root_password password MYSQLPASS123'
+debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password MYSQLPASS123'
 apt-get -y install mysql-server
 
 # RESTART SERVICES
