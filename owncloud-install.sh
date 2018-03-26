@@ -21,7 +21,7 @@ tar -xvf owncloud*
 #wget https://download.owncloud.com/download/community/setup-owncloud.php
 #curl https://download.owncloud.org/download/community/owncloud-latest.zip --output owncloud.zip | tar -xvf owncloud.zip
 
-sudo chown -R www-data:www-data owncloud
+chown -R www-data:www-data owncloud
 mv owncloud /var/www/html
 
 echo "Alias /owncloud \"/var/www/html/owncloud\"
